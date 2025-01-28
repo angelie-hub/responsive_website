@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+    
+        body {
+            font-family: Verdana,'Geneva', Tahoma, sans-serif;
+            background-color:rgb(8, 0, 0);
+            line-height: 1.6;
+        }
+
+        span {
+            background-color: #240101;
+        }
+        header {
+            background-image: url("epicbg.jpg");
+            background-repeat: no-repeat;
+            background-size: 1950px 300px;
+            color: #ffffff;
+            
+            text-align: center;
+            padding: 50px 50px;
+            border-bottom: 2px solid #ffffff;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        nav {
+            background-color: #240101;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 15px 20px;
+        }
+
+        nav a {
+            color: #ebe6f9;
+            text-decoration: none;
+            padding: 10px 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-right: 10px; 
+        }
+
+        nav a:hover {
+            color: #1f0806;
+            background-color: #ebe6f9;
+            border-radius: 4px;
+        }
+
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .content {
+            width: 70%;
+            background-color: #55211a;
+            border: 2px solid #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 3px 15px rgba(255, 191, 16, 0.795);
+        }
+
+        .content h2 {
+            color: #ffffff;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .content p {
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .content div {
+            margin-top: 15px;
+            background-color: #160402;
+            height: 400px;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #ffffff;
+            background-image: url("album.jpg");
+            background-repeat: no-repeat;
+            background-size: 500px 400px;
+            background-position: center;
+        }
+
+        .content div::before {
+            font-size: 1.2rem;
+        }
+        
+
+
+        .content1 {
+            width: 25%;
+            background-color: #55211a;
+            border: 2px solid #fbf8ff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 3px 15px rgba(255, 191, 16, 0.795);
+        }
+
+        .content1 h2 {
+            color: #ffffff;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .content1 p {
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .content1 div {
+            margin-top: 15px;
+            background-color: #ebe6f9;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #ffffff;
+            background-image: url("jrh.jpg");
+            background-repeat: no-repeat;
+            background-size: 430px 300px;
+        }
+
+        .content1 div::before {
+            color: #ffffff;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 726px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .content {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .content1 {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            header {
+                font-size: 1.2rem;
+                padding: 20px;
+            }
+
+            nav {
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+            }
+
+            nav a {
+                padding: 5px;
+                font-size: 0.8rem;
+            }
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span>EPIC: The Musical</span></h1>
+        <p><span>"Ruthlessness is mercy upon ourselves"</span></p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">THINGS</a>
+    </nav>
+
+    <div class="container">
+        <div class="content1">
+            <h2>Creator:</h2>
+            <p>EPIC: The Musical is a musical adaptation of Homer's The Odyssey created by Jorge Rivera-Herrans. The creation of the musical was documented through Jorge's TikTok.</p>
+            <div></div>
+        </div>
+
+        <div class="content">
+            <h2>THE ITHACA SAGA</h2>
+            <p>The final album of EPIC: The Musical. The album's consists of 5 songs just like the previous albums. You can now listen to it for free on Spotify!</p>
+            <div></div>
+        </div>
+    </div>
+</body>
+</html>
